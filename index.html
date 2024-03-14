@@ -8,33 +8,145 @@
       .container {
         width: 80%;
         margin: auto;
-        text-align: center;
+        /* text-align: center; */
+      }
+      .container-2 {
+        width: 80%;
+        margin: auto;
+        /* text-align: center; */
+      }
+      .google {
+        text-decoration: none;
+        color: blue;
+        font-size: 1.5rem;
+      }
+      li {
+        font-size: 1.5rem;
+      }
+      code {
+        color: rgb(0, 60, 255);
+      }
+      .li {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
       }
     </style>
   </head>
   <body>
+    <!-- HTML ELements -->
+    <div><h1 class="h1">HTML Elements</h1></div>
     <div class="container">
-      <h1>This is heading 1</h1>
-      <hr />
-      <h2>This is heading 2</h2>
-      <hr />
-      <h3>This is heading 3</h3>
-      <hr />
-      <h4>This is heading 4</h4>
-      <hr />
-      <h5>This is heading 5</h5>
-      <hr />
-      <h6>This is heading 6</h6>
-      <hr />
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda
-        placeat adipisci, libero id perferendis dolore voluptas ut quasi earum
-        totam consequuntur rerum impedit facere cupiditate, optio consequatur
-        natus fuga fugit.
-      </p>
-      <hr />
-      <img src="./img/20230303_082517.jpg" alt="" width="80%" />
-      <hr />
+      <ul>
+        <li>
+          <div class="li">
+            <code>"h1" - </code>
+            <h1>This is heading 1</h1>
+          </div>
+        </li>
+        <!-- <hr /> -->
+        <li>
+          <div class="li">
+            <code>"h2" - </code>
+            <h2>This is heading 2</h2>
+          </div>
+        </li>
+        <!-- <hr /> -->
+        <li>
+          <div class="li">
+            <code>"h3" - </code>
+            <h3>This is heading 3</h3>
+          </div>
+        </li>
+        <!-- <hr /> -->
+        <li>
+          <div class="li">
+            <code>"h4" - </code>
+            <h4>This is heading 4</h4>
+          </div>
+        </li>
+        <!-- <hr /> -->
+        <li>
+          <div class="li">
+            <code>"h5" - </code>
+            <h5>This is heading 5</h5>
+          </div>
+        </li>
+        <!-- <hr /> -->
+        <li>
+          <div class="li">
+            <code>"h6" - </code>
+            <h6>This is heading 6</h6>
+          </div>
+        </li>
+        <!-- <hr /> -->
+        <li>
+          <div>
+            <p>
+              <code>"p" - </code>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda
+              placeat adipisci, libero id perferendis dolore voluptas ut quasi
+              earum totam consequuntur rerum impedit facere cupiditate, optio
+              consequatur natus fuga fugit.
+            </p>
+          </div>
+        </li>
+        <!-- <hr /> -->
+        <li>
+          <div class="li">
+            <code>"img" - </code>
+            <img src="./img/20230303_082517.jpg" alt="" width="80%" />
+          </div>
+        </li>
+        <!-- <hr /> -->
+        <li>
+          <div class="li">
+            <code>"pre" - </code>
+            <pre>
+              Hello
+              This is a pre text
+            </pre>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <hr />
+
+    <!-- HTML Attributes -->
+    <h1 class="h1">HTML Attributes</h1>
+    <div class="container-2">
+      <ul>
+        <li class="li1">
+          <code>"href"</code> -
+          <a href="https://www.google.com" class="google">Google</a>
+        </li>
+        <li>
+          <code>"src", "width", "height"</code> -
+          <img
+            src="./img/denise-johnson--_cRkZvAtI8-unsplash.jpg"
+            alt=""
+            width="60%"
+            height="60%"
+          />
+        </li>
+        <li>
+          <p>
+            <code>"style"</code> -
+            <span style="color: rgb(171, 62, 3)"
+              >Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt
+              perspiciatis veniam, dolorum quo doloremque quam.</span
+            >
+          </p>
+        </li>
+        <li>
+          <p title="About">
+            <code>"title"</code> - Lorem ipsum dolor, sit amet consectetur
+            adipisicing elit. Quis nam maiores cumque vitae eos, provident,
+            tempore reiciendis asperiores similique hic doloremque assumenda
+            repudiandae, dolorum commodi vel architecto cupiditate quam debitis.
+          </p>
+        </li>
+      </ul>
     </div>
   </body>
 </html>
