@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>DOM Operations and Event Handling</title>
+    <script>
+      // DOM operations and event handling using JavaScript
+      document.addEventListener("DOMContentLoaded", function () {
+        // DOM manipulation
+        var heading = document.createElement("h1");
+        heading.textContent = "Hello, DOM!";
+        document.body.appendChild(heading);
+
+        // Event handling
+        var button = document.createElement("button");
+        button.textContent = "Click me!";
+        button.addEventListener("click", function () {
+          alert("Button clicked!");
+        });
+        document.body.appendChild(button);
+      });
+    </script>
+  </head>
+  <body></body>
+</html>
