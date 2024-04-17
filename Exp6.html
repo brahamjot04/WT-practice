@@ -1,0 +1,41 @@
+<!-- Demonstrate the use of various selectors, filters and event handling in jQuery. -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>jQuery Selectors, Filters, and Event Handling</title>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $(document).ready(function () {
+        // Selectors
+        $("p").css("color", "red");
+        $(".myClass").hide();
+        $("#myId").addClass("highlight");
+
+        // Filters
+        $("ul li:first").css("font-weight", "bold");
+        $("ul li:last").css("font-style", "italic");
+        $("ul li:even").css("background-color", "lightgray");
+
+        // Event Handling
+        $("button").click(function () {
+          alert("Button clicked!");
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h1>jQuery Selectors, Filters, and Event Handling</h1>
+    <p>This is a paragraph.</p>
+    <p class="myClass">This is another paragraph with class "myClass".</p>
+    <ul>
+      <li>Item 1</li>
+      <li>Item 2</li>
+      <li>Item 3</li>
+    </ul>
+    <button>Click me</button>
+  </body>
+</html>
