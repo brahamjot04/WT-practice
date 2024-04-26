@@ -1,41 +1,38 @@
-<!-- Demonstrate the use of various selectors, filters and event handling in jQuery. -->
+<!-- Creation of Web pages using HTML5 and CSS3. -->
+
 <!DOCTYPE html>
 <html>
   <head>
-    <title>jQuery Selectors, Filters, and Event Handling</title>
-    <script
-      src="https://code.jquery.com/jquery-3.7.1.min.js"
-      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
-      crossorigin="anonymous"
-    ></script>
-    <script>
-      $(document).ready(function () {
-        // Selectors
-        $("p").css("color", "red");
-        $(".myClass").hide();
-        $("#myId").addClass("highlight");
+    <title>My Web Page</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f2f2f2;
+      }
 
-        // Filters
-        $("ul li:first").css("font-weight", "bold");
-        $("ul li:last").css("font-style", "italic");
-        $("ul li:even").css("background-color", "lightgray");
+      h1 {
+        color: #333;
+        text-align: center;
+      }
 
-        // Event Handling
-        $("button").click(function () {
-          alert("Button clicked!");
-        });
-      });
-    </script>
+      p {
+        color: #666;
+        line-height: 1.5;
+      }
+    </style>
   </head>
   <body>
-    <h1>jQuery Selectors, Filters, and Event Handling</h1>
-    <p>This is a paragraph.</p>
-    <p class="myClass">This is another paragraph with class "myClass".</p>
-    <ul>
-      <li>Item 1</li>
-      <li>Item 2</li>
-      <li>Item 3</li>
-    </ul>
-    <button>Click me</button>
+    <h1>Welcome to My Web Page</h1>
+
+    <p>This is a sample paragraph.</p>
+
+    <canvas id="myCanvas" width="400" height="400"></canvas>
+    <script>
+      var canvas = document.getElementById("myCanvas");
+      var context = canvas.getContext("2d");
+
+      context.fillStyle = "red";
+      context.fillRect(100, 100, 200, 200); // x, y, width, height
+    </script>
   </body>
 </html>
