@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Canvas Gradient</title>
+    <style>
+        canvas {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="myCanvas" width="200" height="200"></canvas>
+
+    <script>
+        const canvas = document.getElementById('myCanvas');
+        const ctx = canvas.getContext('2d');
+
+        // Create a linear gradient
+        const gradient = ctx.createLinearGradient(0, 0, 200, 200);
+        gradient.addColorStop(0, 'red');
+        gradient.addColorStop(1, 'blue');
+
+        // Set the fill style to the gradient
+        ctx.fillStyle = gradient;
+
+        // Draw the text
+        ctx.font = 'bold 14px Arial';
+        ctx.fillText('Welcome To You', 50, 100);
+    </script>
+</body>
+</html>
